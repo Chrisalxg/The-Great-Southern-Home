@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala</title>
+    <link rel="stylesheet" href="styles1.css">
+
+    <style>
+        /* Ensure header spans full width */
+        header {
+            width: 100%;
+            position: fixed; /* Keeps it at the top */
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+    
+        /* Make sure body has space for content below */
+        body {
+            padding-top: 80px; /* Adjust based on header height */
+            font-family: Arial, sans-serif;
+            background-color: #19314d;
+            margin: 0;
+        }
+    
+        /* Adjust container width and positioning */
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 1200px;  /*Adjust width */
+            width: 90%;
+            margin: auto;
+        }
+    
+        /* Gallery layout with minimal gaps */
+        .gallery {
+            display: flex;
+            justify-content: center;
+            align-items: stretch; /* Ensures all images stretch to the same height */
+            gap: 5px; /* Reducing gap for minimal white space */
+        }
+    
+        .main-image {
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .main-image img {
+            width: 100%; /* Increased width */
+            height: 100%; /* Ensures image fills space */
+            object-fit: cover; /* Ensures no distortion */
+            border-radius: 10px;
+        }
+    
+        .side-images {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 5px; /* Reduced gap */
+        }
+    
+        .side-images img {
+            width: 100%;
+            height: 50%; /* Ensures equal division of space */
+            object-fit: cover; /* Fills space properly */
+            border-radius: 10px;
+        }
+    
+        /* Increased text size for better visibility */
+        .title {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #c7a65b;
+            text-align:left;
+        }
+
+        .title1 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #c7a65b;
+            text-align:center;
+        }
+    
+        .location {
+            font-size: 24px;
+            color: #c7a65b;
+            font-weight: bold;
+            margin-top: 5px;
+            text-align:left;
+        }
+
+        .map-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Adjust spacing if needed */
+        }
+
+        /* Footer Styling */
+        .footer {
+            background-color: #c4a265; /* Beige/golden background */
+            padding: 40px 5%;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Footer Sections */
+        .footer-section {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-section h3 {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer-section p {
+            font-size: 16px;
+            margin: 5px 0;
+            color: #f2f2f2;
+        }
+
+        .footer-section a {
+            text-decoration: none;
+            color: #ffffff;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer-section a:hover {
+            color: #ffcc00; /* Highlight color */
+        }
+
+        /* Social Icons */
+        .social-icons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .social-link {
+            display: inline-block;
+            font-size: 20px;
+            background: #ffffff;
+            color: #19314d;
+            width: 35px;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            border-radius: 50%;
+            transition: background 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: #ffcc00;
+            color: #000;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px; /* Adds spacing between icons */
+            align-items: center;
+        }
+
+        .social-links img {
+            width: 30px; /* Adjust size as needed */
+            height: 30px;
+            border-radius: 50%; /* Ensures circular shape */
+            object-fit: cover; /* Prevents distortion */
+            background-color: white; /* Ensures consistency */
+            padding: 5px; /* Optional: Adds spacing inside circle */
+        }
+
+    </style>
+</head>
+
+
+    <body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <div class="logo">
+                <a href="home.html">
+                    <img src="southern_home_1.png" alt="Southern Home">
+                </a>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="kerala.html" class="active">Kerala</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                    <li><a href="booking-policy.html">Booking Policy</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+   <div class="container">
+        <div class="gallery">
+            <div class="main-image">
+                <img src="kerala_house.jpg" alt="Kalaketty Estate Homestay">
+            </div>
+            <div class="side-images">
+                <img src="kerala2.jpg" alt="View 1">
+                <img src="kerala3.jpg" alt="View 2">
+            </div>
+        </div>
+        <div class="title">The Mullikattu House</div>
+        <div class="location">📍 Kochi</div>
+    </div>
+
+<div class="map-container">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d981.7742580112325!2d76.354295269612!3d10.172767999371365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTDCsDEwJzIyLjAiTiA3NsKwMjEnMTcuOCJF!5e0!3m2!1sen!2sin!4v1743513990340!5m2!1sen!2sin" 
+    width="1237" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</div>
+
+<hr style="border: 1px solid #c7a65b; margin: 20px auto; width: 1237px;">
+
+<section class="welcome-container">
+    <h1 class="welcome-heading">Details</h1>
+    <p class="welcome-description">
+        Looking for a luxurious <strong>villa in Kochi on rent</strong>? The Great Southern Home is a magnificent 6BHK villa that promises an unforgettable stay. This villa boasts six spacious bedrooms, a private pool, and modern amenities, making it the perfect choice for those seeking comfort and elegance. Whether you're planning a family reunion or a vacation with friends, The Mullikattu House offers everything you need for a perfect getaway in Kochi. 
+        <br>
+        <br>
+        Book this stunning villa today and immerse yourself in luxury.
+ Nestled in the picturesque Kerala - Kochi Lake, our exquisite 6BHK villa with a pool is the epitome of luxury and comfort. Availability of this villa in Kerala on rent offers a truly enchanting experience for those seeking a perfect getaway in the lap of nature.
+This villa in Kerala is a spacious 6-bedroom villa that has been meticulously designed to provide ample space for large groups or families, making it an ideal choice for a memorable vacation. <br><br> The highlight of this villa is undoubtedly the private pool, where you can unwind, relax, and create lasting memories with your loved ones. Dive into the crystal-clear waters, bask in the sun, or enjoy a refreshing swim; the pool is your oasis of serenity. This villa in Kerala is an ideal choice for those seeking a luxurious and private retreat with a pool. It offers the perfect combination of comfort, style, and natural beauty, making it the ultimate destination for an unforgettable vacation. Book your stay today and experience the magic of Kerala in our 6BHK villa with a pool.
+
+    </p>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+        <!-- Mumbai Office Details -->
+        <div class="footer-section">
+            <h3>Mumbai Registered Office</h3>
+            <p>📍Shivaji Tower, 4th Floor, Sector 12,
+                Near Infinity Mall, Andheri West,
+                Mumbai, Maharashtra - 400058</p>
+            <p><b>Phone Number:</b> +91 81699 94247</p>   
+            <p><a href="mailto:info@thegreatsouthern.com"><b>Email :</b> info@thegreatsouthern.com</a></p>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-section">
+            <h3>Social Links</h3>
+            <div class="social-links">
+                <a href="https://www.instagram.com/thegreatsouthernhome/" target="_blank" class="social-link"><img src="instagram.png" alt="Instagram" width="30" height="30" ></a>
+                <a href="unavailable.html" target="_blank" class="social-link"><img src="facebook.jpg" alt="Facebook" width="30" height="30"></a>
+                <a href="unavailable.html" target="_blank" class="social-link"><img src="youtube.png" alt="YouTube" width="30" height="30"></a>
+            </div>
+        </div>
+
+        <!-- Locations -->
+        <div class="footer-section locations">
+            <h3>Kerala</h3>
+            <p>Kochi</p>
+            <p>Kollam</p>
+            <p>Allaphuzha</p>
+        </div>
+    </div>
+</footer>
+
+    </body>
+    </html>

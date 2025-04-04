@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="southern_home_1.png" alt="Southern Home">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="kerala.html">Kerala</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="booking.html" class="active">Booking</a></li>
+                    <li><a href="booking-policy.html">Booking Policy</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <h2>Book Your Stay</h2>
+            <p>Reserve your villa at The Great Southern Home for an unforgettable experience.</p>
+            <br>
+
+            <form action="booking-successfull.html" method="POST" class="booking-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="check-in">Check-In Date</label>
+                <input type="date" id="check-in" name="check-in" required>
+
+                <label for="check-out">Check-Out Date</label>
+                <input type="date" id="check-out" name="check-out" required>
+
+                <label for="villa-type">Select Villa</label>
+                <select id="villa-type" name="villa-type" required>
+                    <option value="luxury-villa">The Mullikattu House</option>
+                </select>
+
+                <label for="guests">Number of Guests</label>
+                <input type="number" id="guests" name="guests" min="1" required>
+
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+                
+                <button type="submit" class="booking-btn">Submit Booking</button>
+
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Mumbai Registered Office</h3>
+                <p>📍Shivaji Tower, 4th Floor, Sector 12, Near Infinity Mall, Andheri West, Mumbai, Maharashtra - 400058</p>
+                <p><b>Phone Number:</b> +91 81699 94247</p>   
+                <p><a href="mailto:info@thegreatsouthern.com"><b>Email :</b> info@thegreatsouthern.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>Social Links</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/thegreatsouthernhome/" target="_blank"><img src="instagram.png" alt="Instagram" width="30" height="30"></a>
+                    <a href="#"><img src="facebook.jpg" alt="Facebook" width="30" height="30"></a>
+                    <a href="#"><img src="youtube.png" alt="YouTube" width="30" height="30"></a>
+                </div>
+            </div>
+            <div class="footer-section locations">
+                <h3>Kerala</h3>
+                <p>Kochi</p>
+                <p>Kollam</p>
+                <p>Allaphuzha</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
